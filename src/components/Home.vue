@@ -11,25 +11,42 @@
                   <a class="nav-item nav-link active" href="/accueil">Accueil</a>
                   <a class="nav-item nav-link" href="/login">Login</a>
                   <a class="nav-item nav-link" href="/historic">Historique</a>
-                  <a class="nav-item nav-link" href="/descrip">Descrip</a>
               </div>
           </div>
       </nav>
     </header>
     <section>
       <div>
-        <div id="search">
+        <div id="search" style="text-align: center;">
 
-          <input type="search" name="search" placeholder="Recherche de Quiz">
+          <input type="search" name="search" placeholder="Recherche de Quiz" style="width: 60%;">
 
         </div>
       </div>
     </section>
     <aside>
       <div id="present">
-        <button id="gauche">Left</button>
-        Présentation du Quiz
-        <button id="doite">Rigth</button>
+        
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+              <button id="gauche">Left</button>
+            </div>
+              <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="card">
+                  <div class="card-body">
+                    <h3 class="card-title"></h3>
+                    <div> 
+                        <p>PRESENTATION DU QUIZZ</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><button id="droite">Rigth</button></div>
+        </div>
+    </div>
+        
       </div>
     </aside>
     <footer>

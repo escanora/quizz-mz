@@ -16,12 +16,13 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login #10</h2>
+					<!--<h2 class="heading-section">Login #10</h2>-->
 				</div>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-md-6 col-lg-4">
-					<div class="login-wrap p-0">		          	<h3 class="mb-4 text-center">Have an account?</h3>
+					<div class="login-wrap p-0">		          	
+                    <h3 class="mb-4 text-center">VOUS AVEZ DÉJÀ UN COMPTE ?</h3>
                     <form action="#" class="signin-form">
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Username" required>
@@ -35,7 +36,7 @@
                     </div>
                     <div class="form-group d-md-flex">
                         <div class="w-50">
-                            <label class="checkbox-wrap checkbox-primary">Remember Me
+                            <label class="checkbox-wrap checkbox-primary">Se souvenir de moi 
                                         <input type="checkbox" checked>
                                         <span class="checkmark"></span>
                                         </label>
@@ -45,7 +46,11 @@
                                     </div>
                     </div>
                   </form>
-                      <button>inscrireS'</button>
+                  <form action="#" class="signin-form">
+                    <div class="form-group">
+                        <button type="submit" class="form-control btn btn-warning submit px-3">INVITÉ</button>
+                    </div>
+                  </form>
                 </div>
 				</div>
 			</div>
