@@ -11,6 +11,12 @@
                   <a class="nav-item nav-link active" href="/accueil">Accueil</a>
                   <a class="nav-item nav-link" href="/login">Login</a>
                   <a class="nav-item nav-link" href="/historic">Historique</a>
+                  <a class="nav-item nav-link" href="/finquiz">FinQuiz</a>
+                  <a class="nav-item nav-link" href="/Page5">Remerciement pour l'inscription</a>
+                  <a class="nav-item nav-link" href="/Page6">avant le debut des quiz</a>
+                  <a class="nav-item nav-link" href="/quiz">Quiz</a>
+                  <a class="nav-item nav-link" href="/descrip">description</a>
+                  <a class="nav-item nav-link" href="/score">score</a>
               </div>
           </div>
       </nav>
