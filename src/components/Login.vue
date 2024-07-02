@@ -1,75 +1,83 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                  <a class="nav-item nav-link active" href="/accueil">Accueil</a>
-                  <a class="nav-item nav-link" href="/login">Login</a>
-                  <a class="nav-item nav-link" href="/historic">Historique</a>
-                  <a class="nav-item nav-link" href="/finquiz">FinQuiz</a>
-                  <a class="nav-item nav-link" href="/Page5">Remerciement pour l'inscription</a>
-                  <a class="nav-item nav-link" href="/Page6">avant le debut des quiz</a>
-                  <a class="nav-item nav-link" href="/quiz">Quiz</a>
-                  <a class="nav-item nav-link" href="/descrip">description</a>
-                  <a class="nav-item nav-link" href="/score">score</a>
-              </div>
-          </div>
-      </nav>
     <section class="ftco-section">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
-					<!--<h2 class="heading-section">Login #10</h2>-->
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-6 col-lg-4">
-					<div class="login-wrap p-0">		          	
-                    <h3 class="mb-4 text-center">VOUS AVEZ DÉJÀ UN COMPTE ?</h3>
-                    <form action="#" class="signin-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Username" required>
+        <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-6 text-center mb-5"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <div class="login-wrap p-4 shadow-lg rounded-lg">
+                        <h4 class="mb-4 text-center">Bienvenue sur le Quizz MangaZone</h4>
+                        <form action="#" class="signin-form">
+                            <div class="form-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nom d'utilisateur" required>
+                            </div>
+                            <div class="form-group mb-3 position-relative">
+                                <input id="password-field" type="password" class="form-control" placeholder="Mot de passe" required>
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                            </div>
+                            <div class="form-group mb-4">
+                                <button type="submit" class="btn btn-primary btn-block submit">Se connecter</button>
+                            </div>
+                            <div class="form-group text-center mb-3">
+                                <a href="#" style="color: #ffff;">Mot de passe oublié ?</a>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-outline-secondary btn-block submit">Continuez en tant qu'invité</button>
+                            </div>
+                            <p class="form-group mb-3 mt-2">Pas de compte ?
+                              <a href="#" style="color: #ffff;"> S'inscrire</a>
+                            </p>
+                        </form>
                     </div>
-                    <div class="form-group">
-                    <input id="password-field" type="password" class="form-control" placeholder="Password" required>
-                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="form-control btn btn-primary submit px-3">S'inscrire</button>
-                    </div>
-                    <div class="form-group d-md-flex">
-                        <div class="w-50">
-                            <label class="checkbox-wrap checkbox-primary">Se souvenir de moi 
-                                        <input type="checkbox" checked>
-                                        <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="w-50 text-md-right">
-                                        <a href="#" style="color: #fff">Forgot Password</a>
-                                    </div>
-                    </div>
-                  </form>
-                  <form action="#" class="signin-form">
-                    <div class="form-group">
-                        <button type="submit" class="form-control btn btn-warning submit px-3">INVITÉ</button>
-                    </div>
-                  </form>
                 </div>
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
-    export default {
-        name: 'LoginPage'
-    }
+export default {
+    name: 'LoginPage'
+}
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.login-wrap {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: #fff;
+}
 
+.signin-form {
+    background-color: transparent;
+}
+
+.field-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
+.btn-primary:hover {
+    background-color: #16a085;
+    border-color: #16a085;
+}
+
+.btn-outline-secondary {
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #fff;
+    color: #1abc9c;
+    border-color: #1abc9c;
+}
 </style>
